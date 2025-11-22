@@ -134,7 +134,7 @@ class _BeaconMonitorPageState extends State<BeaconMonitorPage> {
       if (eventType == MonitoringEventType.didEnterRegion) {
         if (!_isInRegion) {
           _isInRegion = true;
-          // User has entered the beacon’s region – trigger notification, sound, vibration
+          // User has entered the beacon’s region: trigger notification, sound, vibration
           await _triggerReminder();
         }
       } else if (eventType == MonitoringEventType.didExitRegion) {
