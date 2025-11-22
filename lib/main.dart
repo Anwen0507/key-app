@@ -134,12 +134,13 @@ class _BeaconMonitorPageState extends State<BeaconMonitorPage> {
       if (eventType == MonitoringEventType.didEnterRegion) {
         if (!_isInRegion) {
           _isInRegion = true;
-          // User has entered the beacon’s region: trigger notification, sound, vibration
+          // User has entered the beacon’s region: trigger notification, sound, vibration (assuming user is inside home)
           await _triggerReminder();
         }
       } else if (eventType == MonitoringEventType.didExitRegion) {
         // Reset state on exit, so we can trigger again on next entry
         _isInRegion = false;
+        // TODO: Need to handle case where user enters region after exiting region (cannot have a notification enters region from outside home)
       }
     });
   }
