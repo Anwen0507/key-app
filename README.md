@@ -1,3 +1,2 @@
-# key_app
-
-A new Flutter project.
+# Mobile Application to Remind User to Take Essentials
+This project is a mobile app that reminds users (primarily the older demographic) to remember to take essentials like keys when they exit the home. The motivation for this project is when I noticed my grandparents commonly forget these essentials when leaving the home, so I thought a simple app like this would significantly make their lives more convenient. This project uses Dart and Flutter SDK.
