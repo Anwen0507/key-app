@@ -1,0 +1,22 @@
+name: key_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_beacon: ^0.5.1                  # plugin for scanning and monitoring iBeacons:contentReference[oaicite:0]{index=0}
+  flutter_local_notifications: ^14.0.0    # plugin for local notifications (Android/iOS)
+  vibration: ^1.7.5                       # plugin to control device vibration
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
